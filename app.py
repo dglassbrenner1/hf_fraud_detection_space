@@ -40,8 +40,8 @@ class TransactionFeatures(BaseModel):
     Term_Risk_30Day: int
 
 
-# Load model at startup
-model_uri = "models:/workspace.default.fraud_detection_pipeline_model@2"
+# Load model at startup; maybe @version or /version?
+model_uri = "models:/workspace.default.fraud_detection_pipeline_model/1"
 try:
     logger.info(f"Loading model from: {model_uri}")
     model = mlflow.sklearn.load_model(model_uri)
