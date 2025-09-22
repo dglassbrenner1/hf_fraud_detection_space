@@ -37,7 +37,7 @@ class TransactionFeatures(BaseModel):
 # Load model at startup, use relative path or HF model registry URI
 # It's recommended to avoid setting mlflow.set_tracking_uri inside app.py due to container environment constraints
 # Instead, ensure MLflow tracking server info is managed externally (via env variable or secrets)
-model_uri = "models:/workspace.default.fraud_detection_pipeline_model/2"
+model_uri = "models:/workspace.default.fraud_detection_pipeline_model@2"
 
 try:
     model = mlflow.sklearn.load_model(model_uri)
