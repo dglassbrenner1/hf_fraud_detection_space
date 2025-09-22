@@ -3,7 +3,10 @@ from pydantic import BaseModel
 from typing import List
 import mlflow.sklearn
 import pandas as pd
+import mlflow
 
+# Set MLflow registry URI to Databricks Workspace Model Registry
+mlflow.set_registry_uri("databricks-uc")
 
 # Initialize FastAPI app
 app = FastAPI()
