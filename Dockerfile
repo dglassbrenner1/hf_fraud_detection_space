@@ -16,6 +16,9 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 # Copy all app code
 COPY --chown=user . /app
 
+# Fix permissions for /app/mlruns so non-root user can access
+RUN mkdir -p /app/mlruns && chown -R user:user /app/mlruns
+
 # Switch to user for safer execution
 USER user
 
