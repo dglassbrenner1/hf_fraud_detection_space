@@ -3,7 +3,7 @@ import mlflow.sklearn
 import pandas as pd
 
 # Load model once (update model_uri accordingly)
-model_uri = "models:/workspace.default.fraud_detection_pipeline_model/1"
+model_uri = "./my_model" #"models:/workspace.default.fraud_detection_pipeline_model/1"
 model = mlflow.sklearn.load_model(model_uri)
 
 st.title("Fraud Detection Model Interface")
