@@ -1,3 +1,4 @@
+import xgboost 
 import mlflow
 import pandas as pd
 
@@ -5,7 +6,7 @@ import pandas as pd
 mlflow.set_registry_uri("databricks-uc")
 
 # The registered model URI, update as needed
-model_uri = "models:/workspace.default.fraud_detection_pipeline_model@2"
+model_uri = "models:/workspace.default.fraud_detection_pipeline_model/1"
 
 def main():
     try:
