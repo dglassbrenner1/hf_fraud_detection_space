@@ -47,4 +47,7 @@ if st.button("Predict Fraud"):
     input_df = pd.DataFrame([input_dict])
 
     prediction = model.predict(input_df)[0]
-    st.success(f"Fraud Prediction: {'Fraudulent' if prediction == 1 else 'Legitimate'}")
+    proba = model.predict_proba(input_df)[0, 1]  # Probability of class 1 (fraud)
+
+    # st.success(f"Fraud Prediction: {'Fraudulent' if prediction == 1 else 'Legitimate'}")
+    st.write(f"Probability of fraud: {proba:.2%}")
