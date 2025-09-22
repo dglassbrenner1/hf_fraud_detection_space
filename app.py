@@ -8,6 +8,9 @@ import pandas as pd
 # Initialize FastAPI app
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "API is running"}
 
 # Define the input data schema
 class TransactionFeatures(BaseModel):
