@@ -7,3 +7,4 @@ xgboost
 scikit-learn==1.4.2
 datetime
 pyspark
+databricks-sdk
