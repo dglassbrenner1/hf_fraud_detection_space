@@ -17,7 +17,7 @@ This repository contains the code and resources for a **fraud detection model de
 
 ## Overview
 
-The fraud detection solution provides a Streamlit app where users can input individual transaction features and get a prediction probability of the transaction being fraudulent. The app loads a tuned XGBoost pipeline model that was trained on historical transaction data.
+The fraud detection solution provides a Streamlit app where users can input individual transaction features and get a prediction probability of the transaction being fraudulent. The app loads a tuned XGBoost pipeline model that was trained on synthetic credit card transaction data from the Fraud Detection Handbook in the references.
 
 ### Features
 
