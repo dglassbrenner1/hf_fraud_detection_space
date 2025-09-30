@@ -69,6 +69,12 @@ streamlit run app.py
 
 4. Use the web interface to input transaction details and get fraud predictions.
 
-## License
 
+## References
+Le Borgne, Y.-A., et al. (2022). *Reproducible Machine Learning for Credit Card Fraud Detection – Practical Handbook*. Université Libre de Bruxelles. GitHub Repo
+
+## Contributions
+Contributions, feedback, and discussions are welcome to improve the understanding and applications shared in this repo. By contributing code or documentation, you agree that your contributions will be licensed under the Apache 2.0 License, providing necessary permissions and patent rights to users.
+
+## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
